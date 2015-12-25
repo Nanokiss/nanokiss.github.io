@@ -33,13 +33,13 @@ function makeCover (cover, $element) {
 	$element.mouseleave(function () { 
 		$overlay.hide(); 
 	})
-	$element.get(0).addEventListener('touchstart', function(e) {
+	$element.get(0).addEventListener('touchmove', function(e) {
     e.preventDefault();
+    var touch = e.touches[0];
+    // alert( + " - " + touch.pageY);
+    // if (touch.pageX)
 		$overlay.show(); 
-	}, false);
-	$element.get(0).addEventListener('touchend', function(e) {
-    e.preventDefault();
-		$overlay.hide(); 
+		// $overlay.hide(); 
 	}, false);
 	$element.addClass('cover-container cover-background');
 	$overlay.addClass('cover cover-background');
