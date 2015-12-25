@@ -56,6 +56,10 @@ var coverList = {
   '[Morrowind Cover]': new Cover (
     'content/Morrowind.png', 'content/Morrowind.gif',
     'https://www.youtube.com/embed/uQdgjZYbhQ4'
+  ),
+  '[Simon Anaglyph Cover]': new Cover (
+    'content/Anaglyph.png', 'content/Anaglyph.gif',
+    'https://www.youtube.com/embed/AjxR9mmpGAE'
   )
 };
 
