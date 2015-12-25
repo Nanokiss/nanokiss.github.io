@@ -11,8 +11,10 @@ var Meta = function (columnSize, rowHeight, title, cover, description, credits) 
 var defaultHeight = 300;
 
 var metaList = [[
-	new Meta (5, 400, 'Gif Jam', '[Gif Jam Cover]', '[Gif Jam Description]', ['[Alexia]', '[Ben]', '[Ink]', '[Clement]', '[Michael]']),
-	new Meta (3, 400, 'Gossima VJ', '[Gossima VJ Cover]', '[Gossima VJ Description]', ['[MechBird]', '[Ben]', '[Leon]', '[Guillaume]', '[Marc]', '[Savoir-Faire]']),
+	new Meta (12, 1, '', '', '[Nanokiss Description]')
+],[
+	new Meta (4, 400, 'Gif Jam', '[Gif Jam Cover]', '[Gif Jam Description]', ['[Alexia]', '[Ben]', '[Ink]', '[Clement]', '[Michael]']),
+	new Meta (4, 400, 'Gossima VJ', '[Gossima VJ Cover]', '[Gossima VJ Description]', ['[MechBird]', '[Ben]', '[Leon]', '[Guillaume]']),
 	new Meta (4, 400, 'Gossima ping pong', '[Gossima Ping Pong Cover]', '[Gossima Ping Pong Description]')
 ], [
 	new Meta (3, defaultHeight, 'Brain Slash', '[Brain Slash Cover]', '[Brain Slash Description]', ['[Ben]', '[Leon]', '[Guillaume]']),
@@ -23,4 +25,8 @@ var metaList = [[
 	new Meta (4, defaultHeight, 'Splashes', '[Splashes Cover]', '', ['[Leon]']),
 	new Meta (4, defaultHeight, 'x?.3', '[X3 Cover]', '[X3 Description]', ['[MechBird]']),
 	new Meta (4, defaultHeight, 'Nivôse', '[Nivose Cover]', '[Nivose Description]', ['[MechBird]'])
+], [
+	new Meta (4, defaultHeight, 'Warband', '[Warband Cover]', '', ['[Leon]']),
+	new Meta (4, defaultHeight, 'Glitch', '[Glitch1 Cover]', '', ['[Leon]']),
+	new Meta (4, defaultHeight, 'Morrowind', '[Morrowind Cover]', '', ['[Leon]'])
 ]];

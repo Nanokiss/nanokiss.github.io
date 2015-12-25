@@ -17,7 +17,7 @@ body {
 }
 
 .row {
-	margin: 30px 0;
+	margin: 0 0 30px 0;
 }
 
 .well {
@@ -36,6 +36,10 @@ h3 {
 
 p { 
 	margin: 5px;
+	font-size: 12px;
+}
+
+.presentation p {
 	font-size: 12px;
 }
 

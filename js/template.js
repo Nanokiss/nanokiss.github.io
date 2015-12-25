@@ -1,21 +1,6 @@
 
-function makeColumn (colSM, content) {
-  return '<div class="col-xs-12 col-sm-' + colSM + '"><div class="cell">' + content + '</div></div>';
-}
-
-function makeMegaTitle () {
-	var title = 'Nanokiss';
-	var str = '<h1><div class="container"><div class="row">';
-	str += '<div class="col-xs-offset-1">';
-	for (var i = 0; i < title.length; ++i) {
-		var className = 'col-xs-1';
-		if (i == 0) {
-			className += ' col-xs-offset-1';
-		}
-		str += '<div class="' + className + '">' + title[i] + '</div>';
-	}
-	str += '</div></div></h1>';
-	return str;
+function makeColumn (columnSize, content) {
+  return '<div class="col-sm-12 col-md-' + columnSize + '"><div class="cell">' + content + '</div></div>';
 }
 
 function makeHeader (title) {

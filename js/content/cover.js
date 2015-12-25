@@ -51,6 +51,20 @@ var coverList = {
   '[Gossima Ping Pong Cover]': new Cover (
     'content/Gossima2.png',
     'content/Gossima2.gif'
+  ),
+  '[Warband Cover]': new Cover (
+    'content/Warband.png',
+    'content/Warband.gif',
+    'https://www.youtube.com/embed/vRf6f73LZGY'
+  ),
+  '[Glitch1 Cover]': new Cover (
+    'content/Glitch1.png',
+    'content/Glitch1.gif'
+  ),
+  '[Morrowind Cover]': new Cover (
+    'content/Morrowind.png',
+    'content/Morrowind.gif',
+    'https://www.youtube.com/embed/uQdgjZYbhQ4'
   )
 };
 
