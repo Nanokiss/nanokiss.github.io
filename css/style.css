@@ -31,16 +31,16 @@ h1 {
 
 h3 {
 	margin: 5px;
-	font-size: 15px;
+	font-size: 1.5em;
 }
 
 p { 
 	margin: 5px;
-	font-size: 12px;
+	font-size: 1.2em;
 }
 
 .presentation p {
-	font-size: 12px;
+	font-size: 1.2em;
 }
 
 .contact {
@@ -49,7 +49,7 @@ p {
 
 .cover-footer {
 	margin: 5px;
-	font-size: 10px;
+	font-size: 1.1em;
 }
 
 .cover {
