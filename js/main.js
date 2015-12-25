@@ -8,6 +8,7 @@ function setupDescriptions (str) {
 		}
 	})
 }
+
 function setupContactLinks (str) {
 	return str.replace(/\[(.*?)\]/g, function (keyword) {
 		if (hasContact(keyword)) {
@@ -20,6 +21,8 @@ function setupContactLinks (str) {
 
 $('body').ready(function () {
 	
+	$('.presentation').append(makeMegaTitle());
+
 	var html = '';
 
 	$.each(metaList, function (index, row) {

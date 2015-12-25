@@ -3,14 +3,29 @@ function makeColumn (colSM, content) {
   return '<div class="col-xs-12 col-sm-' + colSM + '"><div class="cell">' + content + '</div></div>';
 }
 
+function makeMegaTitle () {
+	var title = 'Nanokiss';
+	var str = '<h1><div class="container"><div class="row">';
+	str += '<div class="col-xs-offset-1">';
+	for (var i = 0; i < title.length; ++i) {
+		var className = 'col-xs-1';
+		if (i == 0) {
+			className += ' col-xs-offset-1';
+		}
+		str += '<div class="' + className + '">' + title[i] + '</div>';
+	}
+	str += '</div></div></h1>';
+	return str;
+}
+
 function makeHeader (title) {
 	return '<h3>' + title + '</h3>';
 }
 
 function makeCover (cover, $element) {
-	$element.css('background-image', 'url("' + cover.preview + '"');
+	$element.css('background-image', 'url("' + cover.preview + '")');
 	var $overlay = $(document.createElement('div'));
-	$overlay.css('background-image', 'url("' + cover.gif + '"');
+	$overlay.css('background-image', 'url("' + cover.gif + '")');
 	$overlay.hide();
 	$element.mouseenter(function () { $overlay.show(); })
 	$element.mouseleave(function () { $overlay.hide(); })

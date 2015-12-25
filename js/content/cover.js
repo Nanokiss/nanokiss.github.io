@@ -12,7 +12,8 @@ var coverList = {
   ), 
   '[Ding Dong Cover]': new Cover (
     'content/DingDong.png',
-    'content/DingDong.gif'
+    'content/DingDong.gif',
+    'https://www.youtube.com/embed/hzwytMMhHTk'
   ), 
   '[GPU Cover]': new Cover (
     'content/GPU.png',
@@ -36,11 +37,12 @@ var coverList = {
   '[Ben Kaleido Cover]': new Cover (
     'content/BenKaleido.png',
     'content/BenKaleido.gif',
-    'https://vimeo.com/139346593'
+    'https://player.vimeo.com/video/139346593'
   ),
   '[Splashes Cover]': new Cover (
     'content/Splashes.png',
-    'content/Splashes.gif'
+    'content/Splashes.gif',
+    'https://www.youtube.com/embed/LLV7s8FtUy8'
   ),
   '[Gossima VJ Cover]': new Cover (
     'content/Gossima1.png',

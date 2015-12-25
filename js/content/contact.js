@@ -6,9 +6,9 @@ var Contact = function (name, url) {
 
 var contactList = {
 	'[MechBird]': new Contact ('MechBird', 'http://mechbird.fr/'),
-	'[Leon]': new Contact ('Leon', 'http://leon196.github.io/'),
-	'[Ben]': new Contact ('Ben', 'http://glkitty.tumblr.com/'),
-	'[Alexia]': new Contact ('Alexia', 'http://www.lachafouinade.com/'),
+	'[Leon]': new Contact ('Ponk', 'http://leon196.github.io/'),
+	'[Ben]': new Contact ('GLKitty', 'http://glkitty.tumblr.com/'),
+	'[Alexia]': new Contact ('La Chafouinade', 'http://www.lachafouinade.com/'),
 	'[Clement]': new Contact ('Clement', 'https://vimeo.com/user11295517/videos'),
 	'[Gif Jam]': new Contact ('Gif Jam', 'https://www.facebook.com/gifjamm/?fref=ts'),
 	'[Ink]': new Contact ('Ink', 'http://www.inkcorp.fr/'),
