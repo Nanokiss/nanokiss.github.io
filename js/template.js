@@ -27,20 +27,8 @@ function makeCover (cover, $element) {
 	var $overlay = $(document.createElement('div'));
 	$overlay.css('background-image', 'url("' + cover.gif + '")');
 	$overlay.hide();
-	$element.mouseenter(function () { 
-		$overlay.show(); 
-	})
-	$element.mouseleave(function () { 
-		$overlay.hide(); 
-	})
-	$element.get(0).addEventListener('touchmove', function(e) {
-    e.preventDefault();
-    var touch = e.touches[0];
-    // alert( + " - " + touch.pageY);
-    // if (touch.pageX)
-		$overlay.show(); 
-		// $overlay.hide(); 
-	}, false);
+	$element.mouseenter(function () { $overlay.show(); })
+	$element.mouseleave(function () { $overlay.hide(); })
 	$element.addClass('cover-container cover-background');
 	$overlay.addClass('cover cover-background');
 	$overlay.css('height', $element.height() + 'px');
