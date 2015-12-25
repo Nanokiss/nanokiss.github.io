@@ -18,6 +18,10 @@ $('body').ready(function () {
 			var contact = getContact(keyword);
 			return makeLink(contact.name, contact.url);
 		} 
+		else if (hasDescription(keyword)) 
+		{
+			return getDescription(keyword);
+		} 
 		else 
 		{
 			return keyword;

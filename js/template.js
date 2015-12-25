@@ -1,7 +1,6 @@
 
 function makeColumn (colSM, content) {
-  return '<div class="col-xs-12 col-sm-' + colSM + '"><div class="well">' + content + '</div></div>';
-  // return '<div class="col-xs-12 col-sm-' + colSM + '"><div class="panel panel-default">' + content + '</div></div>';
+  return '<div class="col-xs-12 col-sm-' + colSM + '"><div class="cell">' + content + '</div></div>';
 }
 
 function makeHeader (title) {
@@ -12,16 +11,20 @@ function makeCover (cover, $element) {
 	$element.css('background-image', 'url("' + cover.preview + '"');
 	var $overlay = $(document.createElement('div'));
 	$overlay.css('background-image', 'url("' + cover.gif + '"');
-	$element.append($overlay);
 	$overlay.hide();
-	$element.mouseenter(function () {
-		$overlay.show();
-	})
-	$element.mouseleave(function () {
-		$overlay.hide();
-	})
-	$element.addClass('cover-preview cover-background');
+	$element.mouseenter(function () { $overlay.show(); })
+	$element.mouseleave(function () { $overlay.hide(); })
+	$element.addClass('cover-container cover-background');
 	$overlay.addClass('cover cover-background');
+	$overlay.css('height', $element.height() + 'px');
+	if (cover.link.length > 0) {
+		$element.css('cursor', 'pointer');
+		var link = $('<a>').attr('href', cover.link).attr('target', '_blank');
+		link.html($overlay)
+		$element.append(link);
+	} else {
+		$element.append($overlay);
+	}
 }
 
 function makeDescription (description) {
@@ -29,17 +32,21 @@ function makeDescription (description) {
 }
 
 function makeFooter (credits) {
-  return '<div class="panel-footer">' + credits.join(' + ') + '</div>';
+	if (credits.length > 0) {
+	  return '<div class="cover-footer">' + credits.join(' + ') + '</div>';
+	} else {
+		return '';
+	}
 }
 
 function makeMetaCell (meta) {
 	var cell = makeHeader(meta.title);
-	cell += '<div class="cover">' + meta.cover + '</div>';
+	cell += '<div class="cover" style="height:' + meta.rowHeight + 'px">' + meta.cover + '</div>';
 	cell += makeDescription(meta.description);
 	cell += makeFooter(meta.credits);
 	return cell;
 }
 
 function makeLink (title, url) {
-	return '<a href="' + url + '">' + title + '</a>';
+	return '<a target="_blank" href="' + url + '">' + title + '</a>';
 }
