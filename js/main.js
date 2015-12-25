@@ -20,8 +20,6 @@ function setupContactLinks (str) {
 }
 
 $('body').ready(function () {
-	
-	$('.presentation').append(makeMegaTitle());
 
 	var html = '';
 
