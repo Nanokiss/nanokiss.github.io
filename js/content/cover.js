@@ -5,8 +5,6 @@ var Cover = function (preview, gif, content) {
   this.content = content || '';
 };
 
-var coverCount = 0;
-
 var coverList = {
 	'[Bran Slash Cover]': new Cover (
     'content/GifJam.gif',

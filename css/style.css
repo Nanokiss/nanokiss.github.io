@@ -33,9 +33,14 @@ p {
 
 .cover {
 	height: 200px;
+}
+
+.cover-preview {
+	height: 200px;
 	margin: 5px;
 	border-radius: 5px;
 	cursor: pointer;
+	overflow: hidden;
 }
 
 .cover-background {

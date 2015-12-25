@@ -8,16 +8,20 @@ function makeHeader (title) {
 	return '<h3>' + title + '</h3>';
 }
 
-function makeCover (cover) {
-	var uid = 'cover-' + coverCount;
-	var css = uid + ':hover { background-image: url("' + cover.gif + '"); } ';
-	css += uid + ' { background-image: url(\'' + cover.preview + '\');"';
-	style = document.createElement('style');
-	console.log(style)
-	style.appendChild(document.createTextNode(css));
-	document.getElementsByTagName('head')[0].appendChild(style);
-	++coverCount;
-  return '<div class="cover cover-background ' + uid + '" style="></div>';
+function makeCover (cover, $element) {
+	$element.css('background-image', 'url("' + cover.preview + '"');
+	var $overlay = $(document.createElement('div'));
+	$overlay.css('background-image', 'url("' + cover.gif + '"');
+	$element.append($overlay);
+	$overlay.hide();
+	$element.mouseenter(function () {
+		$overlay.show();
+	})
+	$element.mouseleave(function () {
+		$overlay.hide();
+	})
+	$element.addClass('cover-preview cover-background');
+	$overlay.addClass('cover cover-background');
 }
 
 function makeDescription (description) {
@@ -30,7 +34,7 @@ function makeFooter (credits) {
 
 function makeMetaCell (meta) {
 	var cell = makeHeader(meta.title);
-	cell += meta.cover;
+	cell += '<div class="cover">' + meta.cover + '</div>';
 	cell += makeDescription(meta.description);
 	cell += makeFooter(meta.credits);
 	return cell;

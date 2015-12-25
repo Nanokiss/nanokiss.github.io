@@ -18,11 +18,6 @@ $('body').ready(function () {
 			var contact = getContact(keyword);
 			return makeLink(contact.name, contact.url);
 		} 
-		else if (hasCover(keyword)) 
-		{
-			var cover = getCover(keyword);
-			return makeCover(cover);
-		} 
 		else 
 		{
 			return keyword;
@@ -30,5 +25,16 @@ $('body').ready(function () {
 	})
 
 	$('.container-fluid').append(html);
+
+	$.each($('.cover'), function (index, coverElement) {
+		var $element = $(coverElement);
+		var keyword = $element.html();
+		$element.html('');
+		if (hasCover(keyword)) 
+		{
+			var cover = getCover(keyword);
+			makeCover(cover, $element);
+		}
+	});
 })
 
