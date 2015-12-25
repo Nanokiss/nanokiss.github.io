@@ -27,8 +27,20 @@ function makeCover (cover, $element) {
 	var $overlay = $(document.createElement('div'));
 	$overlay.css('background-image', 'url("' + cover.gif + '")');
 	$overlay.hide();
-	$element.mouseenter(function () { $overlay.show(); })
-	$element.mouseleave(function () { $overlay.hide(); })
+	$element.mouseenter(function () { 
+		$overlay.show(); 
+	})
+	$element.mouseleave(function () { 
+		$overlay.hide(); 
+	})
+	$element.get(0).addEventListener('touchstart', function(e) {
+    e.preventDefault();
+		$overlay.show(); 
+	}, false);
+	$element.get(0).addEventListener('touchend', function(e) {
+    e.preventDefault();
+		$overlay.hide(); 
+	}, false);
 	$element.addClass('cover-container cover-background');
 	$overlay.addClass('cover cover-background');
 	$overlay.css('height', $element.height() + 'px');
