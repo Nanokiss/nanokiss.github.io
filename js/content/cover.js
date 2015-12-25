@@ -1,42 +1,54 @@
 
-var Cover = function (preview, gif, content, link) {
+var Cover = function (preview, gif, link) {
   this.preview = preview || '';
   this.gif = gif || '';
-  this.content = content || '';
   this.link = link || '';
 };
 
 var coverList = {
 	'[Brain Slash Cover]': new Cover (
     'content/BrainSlash.png',
-    'content/BrainSlash.gif',
-    '<div class="squareWrapper"><iframe src="https://vine.co/v/e2Zg1WQtg6V/embed/simple" frameborder="0"></iframe><script src="https://platform.vine.co/static/scripts/embed.js"></script></div>'
+    'content/BrainSlash.gif'
   ), 
   '[Ding Dong Cover]': new Cover (
     'content/DingDong.png',
-    'content/DingDong.gif',
-    '<div class="videoWrapper"><iframe src="https://www.youtube.com/embed/hzwytMMhHTk" frameborder="0" allowfullscreen></iframe></div>'
+    'content/DingDong.gif'
   ), 
   '[GPU Cover]': new Cover (
     'content/GPU.png',
     'content/GPU.gif',
-    '<div class="videoWrapper"><iframe src="https://player.vimeo.com/video/127556214" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>'
+    'http://mechbird.fr/en/gpu.html'
   ),
   '[Gif Jam Cover]': new Cover (
     'content/GifJam.png',
     'content/GifJam.gif',
-    ''
+    'https://www.facebook.com/gifjamm/?fref=ts'
   ),
   '[X3 Cover]': new Cover (
     'content/X3.png',
     'content/X3.gif',
-    ''
+    'http://mechbird.fr/en/xwhydotcube.html'
   ),
   '[Nivose Cover]': new Cover (
     'content/Nivose.png',
-    'content/Nivose.gif',
-    '',
-    'http://mechbird.fr/en/xwhydotcube.html'
+    'content/Nivose.gif'
+  ),
+  '[Ben Kaleido Cover]': new Cover (
+    'content/BenKaleido.png',
+    'content/BenKaleido.gif',
+    'https://vimeo.com/139346593'
+  ),
+  '[Splashes Cover]': new Cover (
+    'content/Splashes.png',
+    'content/Splashes.gif'
+  ),
+  '[Gossima VJ Cover]': new Cover (
+    'content/Gossima1.png',
+    'content/Gossima1.gif'
+  ),
+  '[Gossima Ping Pong Cover]': new Cover (
+    'content/Gossima2.png',
+    'content/Gossima2.gif'
   )
 };
 

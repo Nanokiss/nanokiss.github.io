@@ -12,8 +12,9 @@ var contactList = {
 	'[Clement]': new Contact ('Clement', 'https://vimeo.com/user11295517/videos'),
 	'[Gif Jam]': new Contact ('Gif Jam', 'https://www.facebook.com/gifjamm/?fref=ts'),
 	'[Ink]': new Contact ('Ink', 'http://www.inkcorp.fr/'),
-	'[Michael]': new Contact ('Michael', 'http://'),
-	'[Guillaume]': new Contact ('Guillaume', 'http://')
+	'[Michael]': new Contact ('Michael', ''),
+	'[Guillaume]': new Contact ('YomYomNuts', ''),
+  '[Eisko]': new Contact('Eisko', 'http://www.eisko.com/')
 };
 
 function hasContact (name) {

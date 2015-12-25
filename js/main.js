@@ -1,4 +1,23 @@
 
+function setupDescriptions (str) {
+	return str.replace(/\[(.*?)\]/g, function (keyword) {
+		if (hasDescription(keyword)) {
+			return getDescription(keyword);
+		} else {
+			return keyword;
+		}
+	})
+}
+function setupContactLinks (str) {
+	return str.replace(/\[(.*?)\]/g, function (keyword) {
+		if (hasContact(keyword)) {
+			return makeContactLink(getContact(keyword));
+		} else {
+			return keyword;
+		}
+	})
+}
+
 $('body').ready(function () {
 	
 	var html = '';
@@ -11,22 +30,7 @@ $('body').ready(function () {
 		html += '</div>';
 	});
 
-	html = html.replace(/\[(.*?)\]/g, function (keyword) 
-	{
-		if (hasContact(keyword)) 
-		{
-			var contact = getContact(keyword);
-			return makeLink(contact.name, contact.url);
-		} 
-		else if (hasDescription(keyword)) 
-		{
-			return getDescription(keyword);
-		} 
-		else 
-		{
-			return keyword;
-		}
-	})
+	html = setupContactLinks(setupDescriptions(html));
 
 	$('.container-fluid').append(html);
 

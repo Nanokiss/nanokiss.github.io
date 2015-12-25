@@ -47,6 +47,10 @@ function makeMetaCell (meta) {
 	return cell;
 }
 
-function makeLink (title, url) {
-	return '<a target="_blank" href="' + url + '">' + title + '</a>';
+function makeContactLink (contact) {
+	if (contact.url.length > 0) {
+		return '<a class="contact" target="_blank" href="' + contact.url + '">' + contact.name + '</a>';
+	} else {
+		return '<span class="contact">' + contact.name + '</span>';
+	}
 }
