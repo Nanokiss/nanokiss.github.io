@@ -15,7 +15,9 @@ var contactList = {
 	'[Michael]': new Contact ('Michael', ''),
 	'[Guillaume]': new Contact ('Guillaume Noisette', ''),
 	'[Greg]': new Contact ('Gregory Semah', ''),
-  '[Eisko]': new Contact('Eisko', 'http://www.eisko.com/')
+  '[Eisko]': new Contact('Eisko', 'http://www.eisko.com/'),
+  '[Simon]': new Contact('Simon Denise'),
+  '[C#ROMAKEY]': new Contact('C#ROMAKEY', 'https://www.facebook.com/events/1205421826139166/')
 };
 
 function hasContact (name) {
