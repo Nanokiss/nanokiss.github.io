@@ -11,6 +11,8 @@ var Meta = function (columnSize, rowHeight, title, cover, description, credits) 
 var defaultHeight = 400;
 
 var metaList = [[
+	new Meta (12, 1, '', '', '<h1>NANOKISS</h1>')
+], [
 	new Meta (12, 1, '', '', '[Nanokiss Description]')
 ], [
 	// new Meta (6, defaultHeight, 'Gif Jam', '[Gif Jam Cover]', '[Gif Jam Description]', ['[Alexia]', '[Ben]', '[Ink]', '[Clement]', '[Michael]']),

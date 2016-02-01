@@ -2,7 +2,7 @@
 body {
 	margin: 15px;
   padding: 0px;
-  font-family: 'Ubuntu Mono';
+  font-family: 'Raleway';
   color: white;
   background-color: black;
 }
@@ -27,6 +27,9 @@ body {
 
 h1 {
 	font-size: 100px;
+	font-weight: 200;
+	text-align: center;
+	margin: 0;
 }
 
 h3 {
