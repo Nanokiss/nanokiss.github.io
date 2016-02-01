@@ -7,7 +7,7 @@ var Contact = function (name, url) {
 var contactList = {
 	'[Tatiana]': new Contact ('Tatiana Vilela', 'http://mechbird.fr/'),
 	'[Leon]': new Contact ('Leon Denise', 'http://leon196.github.io/'),
-	'[Ben]': new Contact ('Benjamin Vedrenne', 'http://glkitty.tumblr.com/'),
+	'[Ben]': new Contact ('Ben Vedrenne', 'http://www.glkitty.com/'),
 	'[Alexia]': new Contact ('Alexia Schmidt', 'http://www.lachafouinade.com/'),
 	'[Clement]': new Contact ('Clement Rouil', 'https://vimeo.com/user11295517/videos'),
 	'[Gif Jam]': new Contact ('Gif Jam', 'https://www.facebook.com/gifjamm/?fref=ts'),
